@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: MLOps_project
+Version: 0.0.0
+Summary: This is an MLOps project that is based on the creditcard dataset from kaggle
+Home-page: https://github.com/nishant3937899/CreditCard_fraud_detection_MLOps
+Author: Nishant Chandra Verma
+Author-email: nishantchandra987@gmail.com
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+# CreditCard_fraud_detection_MLOps
