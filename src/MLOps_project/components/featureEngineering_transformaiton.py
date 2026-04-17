@@ -18,7 +18,8 @@ class FeatureEng:
         df['Churn']=df['Churn'].map({'Yes':0,'No':1})
         df['tenure_grp']=pd.cut(df['tenure'],
                         bins=[0,12,24,36,48,60,72],
-                        labels=['0-1yrs','1-2yrs','2-3yrs','3-4yrs','4-5yrs','5-6yrs'])
+                        labels=['0-1yrs','1-2yrs','2-3yrs','3-4yrs','4-5yrs','5-6yrs'],
+                        include_lowest=True)
         df['monthly_charge']=pd.cut(df['MonthlyCharges'],bins=3,labels=['low','medium','high'])
         df.drop('customerID',axis=1,inplace=True)
         services = ['PhoneService', 'MultipleLines', 'InternetService',

@@ -15,7 +15,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import StratifiedKFold
 import pickle
-
+from sklearn.metrics import classification_report
 
 class model_trainer:
     def __init__(self,):
@@ -62,7 +62,7 @@ class model_training:
     def model_train_start(self):
 
         config= self.config
-
+        params=read_yaml(Path('params.yaml'))
         train = pd.read_csv(config.train_dir)
         test =  pd.read_csv(config.test_dir)
 
@@ -78,13 +78,18 @@ class model_training:
         X_test_preprocessed=scale.scaling_encoding(X_test,0)
         logger.info('data has been scaled')
         model = LogisticRegression(
-            C=1.0,
-            penalty='l2',
-            solver='liblinear',
-            max_iter=1000
+            C=params.C,
+            penalty=params.penalty,
+            solver=params.solver,
+            max_iter=params.max_iter,
+            class_weight= {0:1.62, 1:1}
         )
         model.fit(X_train_preprocessed,Y_train)
         logger.info('model has been trained')
         joblib.dump(model,os.path.join(config.model_dir))
 
-        
+        ypred= model.predict(X_test_preprocessed)
+        score= accuracy_score(Y_test,ypred)
+        clsrep=classification_report(Y_test,ypred)
+        print(score)
+        print(clsrep)
