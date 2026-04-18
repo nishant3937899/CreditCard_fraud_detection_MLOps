@@ -78,6 +78,39 @@ def predictor(
     return prediction
     
 
+def prediction_for_csv(df):
+    df=df
+    df['tenure_grp']=pd.cut(df['tenure'],
+                        bins=[0,12,24,36,48,60,72],
+                        labels=['0-1yrs','1-2yrs','2-3yrs','3-4yrs','4-5yrs','5-6yrs'])
+    df['monthly_charge']=pd.cut(df['MonthlyCharges'],bins=3,labels=['low','medium','high'])
+    #df.drop('customerID',axis=1,inplace=True)
+    services = ['PhoneService', 'MultipleLines', 'InternetService',
+            'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+            'TechSupport', 'StreamingTV', 'StreamingMovies']
+        
+    df['Total_services']=df[services].apply(lambda x:(x=='Yes').sum() ,axis=1) 
+    logger.info(f'for prediction of csv feature engineering done')
+    
+    new_df=prediction_feature_eng(df)
+
+    trans=model_trainer()
+    tranform_df=trans.scaling_encoding(new_df,0)
+
+    with open('artifacts/model_trainer/modle.joblib','rb') as f:
+        model= joblib.load(f)
+
+    prediction = model.predict(tranform_df)
+    print(prediction)
+    return prediction
+
+
+
+
+
+
+
+
 
 '''predictor('Male',                     #for testing purpose
           1,

@@ -171,7 +171,18 @@
             <div class="text-center mt-4">
                 <button type="submit" class="btn btn-primary btn-lg w-100">Predict Churn Status</button>
             </div>
+           
+            </form>
+        </div>
         </form>
+ <div class="form-container mb-4" >
+            <h4 class="section-title">Batch Prediction via CSV</h4>
+            <form action="/" method="POST" enctype="multipart/form-data">
+                <div class="input-group">
+                    <input type="file" name='csv_file' class="form-control" accept=".csv" required>
+                    <button class="btn btn-secondary" type="submit">Upload & Predict</button>
+                </div>
+                <small class="text-muted">Ensure your CSV has columns matching the input features.</small>
     </div>
 </body>
 </html>
