@@ -1075,3 +1075,89 @@ box.exceptions.BoxValueError: First argument must be mapping or iterable
 [2026-04-17 16:26:05,799: INFO: model_trainer: data has been scaled]
 [2026-04-17 16:26:05,841: INFO: model_trainer: model has been trained]
 [2026-04-17 16:26:05,854: INFO: main: stage : MODEL TRAINING has successfully completed]
+[2026-04-18 12:35:16,666: INFO: perdiction: for prediction feature engineering done]
+[2026-04-18 12:35:16,670: INFO: common: yaml file<_io.TextIOWrapper name='config\\config.yaml' mode='r' encoding='cp1252'> loaded successfully]
+[2026-04-18 12:35:16,689: INFO: model_trainer: preprocessor has been loaded]
+[2026-04-18 12:52:29,168: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.82.245.169:8080]
+[2026-04-18 12:52:29,169: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-04-18 12:52:29,171: INFO: _internal:  * Restarting with stat]
+[2026-04-18 12:52:31,806: WARNING: _internal:  * Debugger is active!]
+[2026-04-18 12:52:31,810: INFO: _internal:  * Debugger PIN: 474-308-949]
+[2026-04-18 12:52:36,254: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 12:52:36] "GET / HTTP/1.1" 200 -]
+[2026-04-18 12:52:36,662: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 12:52:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2026-04-18 12:53:10,051: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 12:53:10] "[33mPOST /predict HTTP/1.1[0m" 404 -]
+[2026-04-18 13:06:11,603: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.82.245.169:8080]
+[2026-04-18 13:06:11,603: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-04-18 13:06:11,605: INFO: _internal:  * Restarting with stat]
+[2026-04-18 13:06:14,045: WARNING: _internal:  * Debugger is active!]
+[2026-04-18 13:06:14,049: INFO: _internal:  * Debugger PIN: 474-308-949]
+[2026-04-18 13:06:14,119: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:06:14] "GET / HTTP/1.1" 200 -]
+[2026-04-18 13:06:43,108: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:06:43] "[33mPOST /predict HTTP/1.1[0m" 404 -]
+[2026-04-18 13:06:51,525: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:06:51] "[33mPOST /predict HTTP/1.1[0m" 404 -]
+[2026-04-18 13:08:58,187: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.82.245.169:8080]
+[2026-04-18 13:08:58,187: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-04-18 13:08:58,189: INFO: _internal:  * Restarting with stat]
+[2026-04-18 13:09:00,540: WARNING: _internal:  * Debugger is active!]
+[2026-04-18 13:09:00,544: INFO: _internal:  * Debugger PIN: 474-308-949]
+[2026-04-18 13:09:00,602: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:09:00] "GET / HTTP/1.1" 200 -]
+[2026-04-18 13:09:24,247: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:09:24] "[33mPOST /predict HTTP/1.1[0m" 404 -]
+[2026-04-18 13:11:24,857: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.82.245.169:8080]
+[2026-04-18 13:11:24,857: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-04-18 13:11:24,859: INFO: _internal:  * Restarting with stat]
+[2026-04-18 13:11:27,173: WARNING: _internal:  * Debugger is active!]
+[2026-04-18 13:11:27,176: INFO: _internal:  * Debugger PIN: 474-308-949]
+[2026-04-18 13:11:29,560: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:11:29] "GET / HTTP/1.1" 200 -]
+[2026-04-18 13:11:37,362: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:11:37] "[33mPOST /predict HTTP/1.1[0m" 404 -]
+[2026-04-18 13:12:07,725: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:12:07] "[33mPOST /predict HTTP/1.1[0m" 404 -]
+[2026-04-18 13:12:56,897: INFO: _internal:  * Detected change in 'c:\\Users\\NishantHP\\Desktop\\MLOps project\\app.py', reloading]
+[2026-04-18 13:12:57,144: INFO: _internal:  * Restarting with stat]
+[2026-04-18 13:12:59,558: WARNING: _internal:  * Debugger is active!]
+[2026-04-18 13:12:59,561: INFO: _internal:  * Debugger PIN: 474-308-949]
+[2026-04-18 13:13:00,691: INFO: _internal:  * Detected change in 'c:\\Users\\NishantHP\\Desktop\\MLOps project\\app.py', reloading]
+[2026-04-18 13:13:00,935: INFO: _internal:  * Restarting with stat]
+[2026-04-18 13:13:03,341: WARNING: _internal:  * Debugger is active!]
+[2026-04-18 13:13:03,344: INFO: _internal:  * Debugger PIN: 474-308-949]
+[2026-04-18 13:13:08,658: INFO: _internal:  * Detected change in 'c:\\Users\\NishantHP\\Desktop\\MLOps project\\app.py', reloading]
+[2026-04-18 13:13:08,932: INFO: _internal:  * Restarting with stat]
+[2026-04-18 13:13:11,485: WARNING: _internal:  * Debugger is active!]
+[2026-04-18 13:13:11,489: INFO: _internal:  * Debugger PIN: 474-308-949]
+[2026-04-18 13:13:12,602: INFO: _internal:  * Detected change in 'c:\\Users\\NishantHP\\Desktop\\MLOps project\\app.py', reloading]
+[2026-04-18 13:13:12,950: INFO: _internal:  * Restarting with stat]
+[2026-04-18 13:13:15,238: WARNING: _internal:  * Debugger is active!]
+[2026-04-18 13:13:15,241: INFO: _internal:  * Debugger PIN: 474-308-949]
+[2026-04-18 13:13:20,468: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:13:20] "[33mPOST /predict HTTP/1.1[0m" 404 -]
+[2026-04-18 13:13:36,270: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.82.245.169:8080]
+[2026-04-18 13:13:36,271: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-04-18 13:13:36,273: INFO: _internal:  * Restarting with stat]
+[2026-04-18 13:13:38,585: WARNING: _internal:  * Debugger is active!]
+[2026-04-18 13:13:38,588: INFO: _internal:  * Debugger PIN: 474-308-949]
+[2026-04-18 13:13:40,372: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:13:40] "GET / HTTP/1.1" 200 -]
+[2026-04-18 13:13:47,999: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:13:47] "[33mPOST /predict HTTP/1.1[0m" 404 -]
+[2026-04-18 13:16:59,719: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.82.245.169:8080]
+[2026-04-18 13:16:59,720: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-04-18 13:16:59,722: INFO: _internal:  * Restarting with stat]
+[2026-04-18 13:17:02,041: WARNING: _internal:  * Debugger is active!]
+[2026-04-18 13:17:02,045: INFO: _internal:  * Debugger PIN: 474-308-949]
+[2026-04-18 13:17:03,395: INFO: _internal: 127.0.0.1 - - [18/Apr/2026 13:17:03] "GET / HTTP/1.1" 200 -]
+[2026-04-18 13:29:18,293: INFO: _internal:  * Detected change in 'c:\\Users\\NishantHP\\Desktop\\MLOps project\\app.py', reloading]
+[2026-04-18 13:29:18,557: INFO: _internal:  * Restarting with stat]
+[2026-04-18 13:29:20,899: WARNING: _internal:  * Debugger is active!]
+[2026-04-18 13:29:20,902: INFO: _internal:  * Debugger PIN: 474-308-949]
