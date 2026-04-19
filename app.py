@@ -5,8 +5,7 @@ import io
 import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.offline as opy
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 
 app = Flask(__name__)
